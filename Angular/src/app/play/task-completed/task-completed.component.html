@@ -1,0 +1,12 @@
+<h2 class="text-xl font-bold mb-4">Completed Tasks</h2>
+<ul>
+  <li *ngFor="let todo of completedTasks" class="mb-2 text-gray-700">
+    {{ todo.todo }}
+    <button
+      (click)="onUndoComplete(todo)"
+      class="ml-2 text-red-500"
+    >
+      (X)
+    </button>
+  </li>
+</ul>
