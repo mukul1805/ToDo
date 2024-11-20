@@ -6,14 +6,14 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
-  {path:'play', component:PlayComponent, canActivate:[AuthGuard]},
-  {path:'login', component:LoginComponent},
-  {path: '**', redirectTo: '/login' } // default
+  { path: '', component: HomeComponent },
+  { path: 'play', component: PlayComponent, canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '/login' }, // default
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
