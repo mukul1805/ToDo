@@ -21,7 +21,7 @@ describe('AuthService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should set isAuthenticated to true and store isLoggedIn in localStorage on login', () => {
+  it('should set isAuthenticated=true and store isLoggedIn in localStorage on login', () => {
     service.login();
     expect(service['isAuthenticated']).toBeTrue(); // Check internal state
     expect(localStorage.getItem('isLoggedIn')).toBe('true'); // Check localStorage

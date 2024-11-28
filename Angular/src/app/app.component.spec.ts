@@ -30,6 +30,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+    // console.log("render title wala test run ho rha:",compiled.innerHTML);
     expect(compiled.querySelector('.content span')?.textContent).toContain('Angular app is running!');
   });
 });
