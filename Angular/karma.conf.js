@@ -11,7 +11,8 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
-      require('karma-verbose-reporter')
+      require('karma-verbose-reporter'),
+      require('karma-htmlfile-reporter')
     ],
     client: {
       jasmine: {
@@ -33,7 +34,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['progress', 'kjhtml','verbose'],
+    reporters: ['progress', 'kjhtml','verbose','html'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
