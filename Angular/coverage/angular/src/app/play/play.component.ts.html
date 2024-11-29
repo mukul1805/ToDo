@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">44.44% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/36</span>
+                <span class='fraction'>16/36</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">5.88% </span>
+                <span class="strong">47.05% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/17</span>
+                <span class='fraction'>8/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">9.09% </span>
+                <span class="strong">42.42% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/33</span>
+                <span class='fraction'>14/33</span>
             </div>
         
             
@@ -158,27 +158,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -190,19 +181,28 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -243,19 +243,19 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-play',
   templateUrl: './play.component.html',
-  st<span class="fstat-no" title="function not covered" >yl</span>eUrls: ['./play.component.css']
-})<span class="cstat-no" title="statement not covered" ></span>
-export c<span class="cstat-no" title="statement not covered" >lass PlayComponent {</span>
-  todos:<span class="cstat-no" title="statement not covered" > any[] = [];</span>
-  newTod<span class="cstat-no" title="statement not covered" >o: string = '';</span>
-  userId<span class="cstat-no" title="statement not covered" >: number = 0;</span>
-<span class="cstat-no" title="statement not covered" ></span>
+  styleUrls: ['./play.component.css']
+})
+export class PlayComponent {
+  todos: any[] = [];
+  newTodo: string = '';
+  userId: number = 0;
+&nbsp;
   constructor(private todoService: TodoService, private authService: AuthService, private router: Router) {}
-<span class="fstat-no" title="function not covered" ></span>
-  ngOnIn<span class="cstat-no" title="statement not covered" >it(): void {</span>
+&nbsp;
+  ngOnInit(): void {
     this.getTodos();
-  }<span class="fstat-no" title="function not covered" ></span>
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+  }
+<span class="fstat-no" title="function not covered" ></span>
 <span class="cstat-no" title="statement not covered" ></span>
   getTodos()<span class="cstat-no" title="statement not covered" >: void {</span>
     this.to<span class="fstat-no" title="function not covered" >do</span>Service.getTodos().subscribe(
@@ -281,14 +281,14 @@ export c<span class="cstat-no" title="statement not covered" >lass PlayComponent
 <span class="cstat-no" title="statement not covered" ></span>
     this.todoService.addTodo(todo).subscribe(
       (data) =&gt; {
-<span class="fstat-no" title="function not covered" ></span>        console.log('Todo added, it adding...:', data);
-<span class="cstat-no" title="statement not covered" >        this.todos.push(data); </span> // Add the new todo to the todos array
+        console.log('Todo added, it adding...:', data);
+        this.todos.push(data);  // Add the new todo to the todos array
         this.newTodo = '';  // Clear the input field
-<span class="fstat-no" title="function not covered" ></span>      },
-      (e<span class="cstat-no" title="statement not covered" >rror) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+      },
+      (error) =&gt; {
         console.error('Error adding todo:', error);
-<span class="fstat-no" title="function not covered" ></span>      }
-    );<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+      }
+    );<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
   }
 <span class="fstat-no" title="function not covered" ></span>
   markCo<span class="cstat-no" title="statement not covered" >mpleted(todo: any) {</span>
@@ -328,7 +328,7 @@ export c<span class="cstat-no" title="statement not covered" >lass PlayComponent
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-11-28T08:40:17.763Z
+                at 2024-11-29T09:39:42.218Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

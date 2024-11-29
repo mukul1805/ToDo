@@ -36,7 +36,7 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml','verbose','html'],
     htmlReporter: {
-      outputFile: '*/units.html'
+      outputFile: './units.html'
     },
     port: 9876,
     colors: true,
